@@ -12,18 +12,18 @@ int main()
 			printf("\n");
 	 }
 	 printf("Original matrix : \n");
-	 for(i=0; i<ROW; i++) {
-	 	for(j=0; j<COL; j++)
+	 for(i=0; i<COL; i++) {
+	 	for(j=0; j<ROW; j++)
 	 	printf("%d\t", a[i][j]);
 	 	printf("\n");
 	    }
-	 for(j=1; j<COL; j++) 
-	   for(i=0; i<j; i++)
+	 for(i=1; i<COL; i++) 
+	   for(j=0; j<i; j++)
 	   a[i][j]=0;
 	   printf("Lower Triangular Matrix : \n");
-	   for(i=0; i<ROW; i++)
+	   for(i=0; i<COL; i++)
 	   {
-	   	for(j=0; j<COL; j++)
+	   	for(j=0; j<ROW; j++)
 	   	printf("%d\t", a[i][j]);
 	   	printf("\n");
 	   }
